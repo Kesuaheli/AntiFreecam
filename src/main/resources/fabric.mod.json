@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "antifreecam",
+  "version": "${mod_version}",
+  "name": "AntiFreecam",
+  "description": "",
+  "authors": [ "Kesuaheli" ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/antifreecam/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "de.kesuaheli.antifreecam.client.AntifreecamDataGenerator"
+    ],
+    "client": [
+      "de.kesuaheli.antifreecam.client.AntifreecamClient"
+    ],
+    "main": [
+      "de.kesuaheli.antifreecam.Antifreecam"
+    ]
+  },
+  "mixins": [
+    "antifreecam.mixins.json",
+    {
+      "config": "antifreecam.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "suggests": {
+    "freecam": "*"
+  }
+}
