@@ -15,6 +15,7 @@ public class AntifreecamClient implements ClientModInitializer {
 		FreecamIntegration.enable();
 
 		ClientConfigurationNetworking.registerGlobalReceiver(FreecamConfigS2CPacket.ID, (payload, context) -> {
+			FreecamIntegration.forceCollision = payload.forceCollision();
 			LOGGER.info("Server config: force collisions {}", payload.forceCollision());
 		});
 	}
