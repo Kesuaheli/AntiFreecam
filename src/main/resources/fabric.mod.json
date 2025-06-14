@@ -11,13 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "de.kesuaheli.antifreecam.client.AntifreecamDataGenerator"
+      "de.kesuaheli.antifreecam.client.AntiFreecamDataGenerator"
     ],
     "client": [
-      "de.kesuaheli.antifreecam.client.AntifreecamClient"
+      "de.kesuaheli.antifreecam.client.AntiFreecamClient"
     ],
     "main": [
-      "de.kesuaheli.antifreecam.Antifreecam"
+      "de.kesuaheli.antifreecam.AntiFreecam"
     ]
   },
   "mixins": [

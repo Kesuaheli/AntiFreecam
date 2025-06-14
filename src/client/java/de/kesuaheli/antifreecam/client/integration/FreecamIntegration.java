@@ -1,6 +1,6 @@
 package de.kesuaheli.antifreecam.client.integration;
 
-import de.kesuaheli.antifreecam.Antifreecam;
+import de.kesuaheli.antifreecam.AntiFreecam;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FreecamIntegration {
@@ -12,10 +12,10 @@ public class FreecamIntegration {
 
 	public static void enable() {
 		if (!isFreecamPresent()) {
-			Antifreecam.LOGGER.info("Freecam Mod not installed on client.");
+			AntiFreecam.LOGGER.info("Freecam Mod not installed on client.");
 			return;
 		}
-		Antifreecam.LOGGER.info("Freecam Mod installed on client.");
+		AntiFreecam.LOGGER.info("Freecam Mod installed on client.");
 	}
 
 	public static boolean fetchFreecam() {

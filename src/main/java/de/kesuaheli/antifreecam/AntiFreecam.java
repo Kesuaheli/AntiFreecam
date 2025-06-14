@@ -9,9 +9,9 @@ import net.minecraft.text.Text;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Antifreecam implements ModInitializer {
+public class AntiFreecam implements ModInitializer {
 
-	public static final Logger LOGGER = LoggerFactory.getLogger(Antifreecam.class);
+	public static final Logger LOGGER = LoggerFactory.getLogger(AntiFreecam.class);
 	public static final String MOD_ID = "antifreecam";
 
 	@Override

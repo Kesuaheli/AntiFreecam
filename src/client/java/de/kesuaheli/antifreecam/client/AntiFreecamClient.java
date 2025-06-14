@@ -1,14 +1,14 @@
 package de.kesuaheli.antifreecam.client;
 
-import de.kesuaheli.antifreecam.Antifreecam;
+import de.kesuaheli.antifreecam.AntiFreecam;
 import de.kesuaheli.antifreecam.client.integration.FreecamIntegration;
 import de.kesuaheli.antifreecam.packet.FreecamConfigS2CPacket;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientConfigurationNetworking;
 import org.slf4j.Logger;
 
-public class AntifreecamClient implements ClientModInitializer {
-	public final Logger LOGGER = Antifreecam.LOGGER;
+public class AntiFreecamClient implements ClientModInitializer {
+	public final Logger LOGGER = AntiFreecam.LOGGER;
 
 	@Override
 	public void onInitializeClient() {
