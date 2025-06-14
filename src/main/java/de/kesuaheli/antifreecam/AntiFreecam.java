@@ -17,16 +17,5 @@ public class AntiFreecam implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		PayloadTypeRegistry.configurationS2C().register(FreecamConfigS2CPacket.ID, FreecamConfigS2CPacket.CODEC);
-
-		ServerConfigurationConnectionEvents.CONFIGURE.register((handler, server) -> {
-			if (!ServerConfigurationNetworking.canSend(handler, FreecamConfigS2CPacket.ID)) {
-				handler.disconnect(Text.literal("This Server requires the AntiFreecam mod to be installed."));
-				return;
-			}
-			ServerConfigurationNetworking.send(handler, new FreecamConfigS2CPacket(true));
-			LOGGER.info("A player with AntiFreecam connects to the server...");
-		});
-
-		LOGGER.info("Loaded AntiFreecam");
 	}
 }

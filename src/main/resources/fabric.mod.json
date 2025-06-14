@@ -18,6 +18,9 @@
     ],
     "main": [
       "de.kesuaheli.antifreecam.AntiFreecam"
+    ],
+    "server": [
+      "de.kesuaheli.antifreecam.server.AntiFreecamServer"
     ]
   },
   "mixins": [

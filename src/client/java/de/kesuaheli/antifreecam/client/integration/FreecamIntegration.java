@@ -8,7 +8,7 @@ public class FreecamIntegration {
 	private static boolean fetched = false;
 	private static boolean freecamPresent;
 
-	public static boolean forceCollision = true;
+	public static boolean forceCollision = false;
 
 	public static void enable() {
 		if (!isFreecamPresent()) {
