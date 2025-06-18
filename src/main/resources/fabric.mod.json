@@ -5,9 +5,12 @@
   "name": "AntiFreecam",
   "description": "",
   "authors": [ "Kesuaheli" ],
-  "contact": {},
+  "contact": {
+    "sources": "https://github.com/Kesuaheli/AntiFreecam",
+    "issues": "https://github.com/Kesuaheli/AntiFreecam/issues"
+  },
   "license": "MIT",
-  "icon": "assets/antifreecam/icon.png",
+  "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
