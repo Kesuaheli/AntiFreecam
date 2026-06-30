@@ -2,7 +2,7 @@
 
 AntiFreecam is a Minecraft Fabric Mod that runs on both server and client.
 
-It exists to force collisions when the client uses the Freecam Mod, no matter what users have their settings set to.
+It exists to force collisions when the client uses the [Freecam Mod (by hashalite)](https://modrinth.com/mod/freecam), no matter what users have their settings set to.
 
 ## Usage
 
