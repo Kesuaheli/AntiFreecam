@@ -5,7 +5,7 @@ import de.kesuaheli.antifreecam.packet.FreecamConfigS2CPacket;
 import net.fabricmc.api.DedicatedServerModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerConfigurationNetworking;
-import net.minecraft.text.Text;
+import net.minecraft.network.chat.Component;
 
 public class AntiFreecamServer implements DedicatedServerModInitializer {
 	/**
@@ -17,7 +17,7 @@ public class AntiFreecamServer implements DedicatedServerModInitializer {
 
 		ServerConfigurationConnectionEvents.CONFIGURE.register((handler, server) -> {
 			if (!ServerConfigurationNetworking.canSend(handler, FreecamConfigS2CPacket.ID)) {
-				handler.disconnect(Text.literal("This Server requires the AntiFreecam mod to be installed."));
+				handler.disconnect(Component.literal("This Server requires the AntiFreecam mod to be installed."));
 				return;
 			}
 			ServerConfigurationNetworking.send(handler, new FreecamConfigS2CPacket(true));

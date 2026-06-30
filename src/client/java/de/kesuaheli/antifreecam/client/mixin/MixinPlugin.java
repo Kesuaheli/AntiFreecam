@@ -22,7 +22,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
 
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-		if (mixinClassName.equals("CollisionBehavior")) {
+		if (mixinClassName.equals("ModConfigDTO")) {
 			return FreecamIntegration.isFreecamPresent();
 		}
 		return true;
@@ -37,7 +37,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
 		var mixins = new ArrayList<String>();
 
 		if (FreecamIntegration.isFreecamPresent()) {
-			mixins.add("CollisionBehaviorMixin");
+			mixins.add("FreecamModConfigDTOMixin");
 		}
 
 		// Return null to use mixins.json instead
