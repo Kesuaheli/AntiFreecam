@@ -13,6 +13,6 @@ public class AntiFreecam implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		PayloadTypeRegistry.configurationS2C().register(FreecamConfigS2CPacket.ID, FreecamConfigS2CPacket.CODEC);
+		PayloadTypeRegistry.clientboundConfiguration().register(FreecamConfigS2CPacket.ID, FreecamConfigS2CPacket.CODEC);
 	}
 }
