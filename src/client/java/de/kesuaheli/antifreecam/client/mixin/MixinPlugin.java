@@ -37,7 +37,7 @@ public class MixinPlugin implements IMixinConfigPlugin {
 		var mixins = new ArrayList<String>();
 
 		if (FreecamIntegration.isFreecamPresent()) {
-			mixins.add("FreecamModConfigDTOMixin");
+			mixins.add("ModConfigImplMixin");
 		}
 
 		// Return null to use mixins.json instead

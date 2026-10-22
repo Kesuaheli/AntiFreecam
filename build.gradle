@@ -32,6 +32,7 @@ repositories {
 
     maven { url = "https://maven.shedaniel.me/" }
     maven { url = "https://maven.terraformersmc.com/" }
+    maven { url = "https://api.modrinth.com/maven" }
 }
 
 dependencies {
@@ -40,7 +41,8 @@ dependencies {
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    modCompileOnly "com.github.MinecraftFreecam:Freecam:${project.freecam_version}"
+    //compileOnly "com.github.MinecraftFreecam:Freecam:${project.freecam_version}"
+    compileOnly "maven.modrinth:XeEZ3fK2:lwrkvqym" // Freecam via Modrinth maven
 }
 
 Map<String, String> replaceProperties = [
